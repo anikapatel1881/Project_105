@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Image Recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+   <link rel="stylesheet" href="style.css">
+
+   <!-- https://teachablemachine.withgoogle.com/models/wmeoKL8WY/ -->
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+
+      <!-- Add h3 for heading -->
+      <h3> Image Recognition </h3>
+
+      <br><br>
+
+      <p style="font-size: 22px;">Model is trained to identify the following faces: </p>
+
+      <!-- 2. Add b tag for the list of faces -->
+
+      <b class="name_of_faces">
+        Mother
+        <hr>
+        Father
+        <hr>
+        Me
+        <hr>
+      </b>
+
+      <label>Webcam View - </label>
+
+      <!-- 3. Add div tag to hold the cam view -->
+
+      <div id="camera"></div>
+
+      <br><br>
+
+      <!-- 4. Add div tag to set the picture taken -->
+
+      <div id="result"></div>
+
+      <br><br>
+
+      <!--  5. Add button to capture img -->
+
+      <button onclick="take_snapshot();" class="btn-btn-info">Capture Image</button>
+
+      <br><br>
+
+      <!-- 6. Add btn to compare img -->
+
+      <button onclick="check();" class="btn-btn-primary">Check</button>
+
+      <br><br>
+
+      <!-- 7. Add span tag to hold the name of face -->
+
+      <p style="font-size: 22px;">Face :  <span id="result_face_image"></span></p>
+      <p style="font-size: 22px;">Accuracy :  <span id="result_of_accuracy"></span></p>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>

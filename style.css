@@ -1,0 +1,11 @@
+body
+{
+background-image: linear-gradient(to right top, rgb(255, 0, 0), #f2860a, #eff307, rgb(18, 215, 18), rgb(15, 15, 225), rgb(188, 10, 242));
+}
+
+#camera
+{
+border: 2px dashed rgb(166, 0, 255);
+width: 350px;
+height: 350px;
+}
